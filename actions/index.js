@@ -1,4 +1,4 @@
-[
+const MOVIE_DATA = [
     {
         id: "1",
         name: "The Shawshank Redemption",
@@ -33,3 +33,11 @@
             "https://img.cinemablend.com/filter:scale/quill/0/f/5/2/a/6/0f52a6843a25c1a5c1f9a0c00548cad9e1d912e2.jpg?mw=600",
     },
 ];
+
+export const getMovies = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(MOVIE_DATA);
+        }, 0);
+    });
+};
